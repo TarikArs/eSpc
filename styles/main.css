@@ -1,0 +1,80 @@
+.navbar {
+    height: 30px;
+    background: rgb(185, 195, 206);
+}
+.navbar-nav{
+    font-size: 14px;
+}
+.dropdown-menu {
+    font-size: 12px;
+}
+
+.navbar .nav-item .dropdown-menu {
+    display: none;
+}
+
+.navbar .nav-item:hover .nav-link {}
+
+.navbar .nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+}
+
+/* tabs navigaton  */
+.tabsnavigation {
+    margin-top: 1%;
+}
+.nav-tabs .nav-link.active {
+    background:rgba(98,124,155,255);
+    color  :#fff;
+}
+
+/* tabs-1 content */
+
+#nav-catalog {
+    margin-top:1% ;
+}
+
+.filter-data {
+
+}
+.catalogue-list {
+
+}
+.checkboxes {
+    display: flex;
+    margin-top: 2%;
+}
+.multi-select-checking {
+    display: flex;
+    border: 1px solid lightgray;
+    padding: 6px;
+    width: 100%;
+    font-size: 12px;
+    border-radius: 5px;
+    overflow: auto;
+}
+.machines-part-1 {
+    display: flex;
+    flex-direction: column;
+}
+.clear-button {
+    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+} 
+.table-container {
+    display: flex;
+    width: 100%;
+    overflow: auto;
+}
+#catalogues {
+    width: 1200px !important;
+}
+thead {
+    background: lightgray;
+    font-size: 10px;
+}
