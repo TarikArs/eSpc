@@ -4,9 +4,6 @@ body {
 }
 
 /* tabs navigaton  */
-.tabsnavigation {
-    margin-top: 1%;
-}
 
 .nav-tabs .nav-link {
     border: 0;
@@ -17,24 +14,8 @@ body {
 
     border-bottom: 2px solid rgba(98, 124, 155, 255) !important;
 }
-
-
-
-button.active {
-    border-bottom: 2px solid #55c57a;
-}
-
-/* tabs-1 content */
 .tab-content {
     width: 98%;
-}
-
-
-#nav-catalog {
-    margin-top: 1%;
-}
-#nav-tab-catalog-list {
-    margin-bottom: 2%;
 }
 
 .card {
@@ -45,13 +26,8 @@ button.active {
 
 }
 
-.checkboxes {
-    display: flex;
-    margin-top: 2%;
-}
-
 .multi-select-checking {
-    display: flex;
+    
     border: 1px solid lightgray;
     padding: 6px;
     width: 100%;
@@ -59,23 +35,6 @@ button.active {
     border-radius: 5px;
     overflow: auto;
     background: #fff;
-}
-
-.machines-part-1 {
-    display: flex;
-    flex-direction: column;
-}
-
-.clear-button {
-    margin-top: 6%;
-    display: flex;
-    justify-content: center;
-}
-
-.table-container {
-    display: flex;
-    width: 100%;
-    overflow: auto;
 }
 
 #catalogues {
@@ -102,12 +61,7 @@ thead {
     background: rgba(98, 124, 155, 255);
     color: #fff;
 }
-.modal-content {
-    border: 0;
-}
-.modal-footer {
-    justify-content: center;
-}
+
 .modal-footer button {
     width: 20%;
 }
