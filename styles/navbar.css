@@ -1,0 +1,30 @@
+.navbar {
+    height: 30px;
+    background: rgb(185, 195, 206);
+}
+
+.navbar-nav {
+    font-size: 14px;
+}
+
+.dropdown-menu {
+    font-size: 12px;
+}
+
+.navbar .nav-item .dropdown-menu {
+    display: none;
+}
+
+
+.navbar .nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+}
+.exit-item {
+    padding-top: 10px;
+    border-top: 1px solid lightgray;
+    color: red;
+}
