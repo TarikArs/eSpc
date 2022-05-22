@@ -97,3 +97,19 @@ thead {
 .icon-trash {
     color: red;
 }
+.modal-header {
+    background: rgba(98, 124, 155, 255);
+    color: #fff;
+}
+.modal-content {
+    border: 0;
+}
+.modal-footer {
+    justify-content: center;
+}
+.modal-footer button {
+    width: 20%;
+}
+.modal-title {
+    font-size: 15px;
+}
