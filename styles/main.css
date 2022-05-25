@@ -68,3 +68,8 @@ thead {
 .modal-title {
     font-size: 15px;
 }
+
+
+.clear-button button  {
+    width: 50%;
+}
