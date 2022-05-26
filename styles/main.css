@@ -73,3 +73,10 @@ thead {
 .clear-button button  {
     width: 50%;
 }
+
+
+.information-paragraph {
+    padding: 5%;
+    font-size: 12px;
+    color: #000;
+}
