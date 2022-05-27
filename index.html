@@ -105,23 +105,25 @@
         </div>
     </nav>
 
-    <!-- onglets -->
-    <div class="tabsnavigation mt-1">
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <button class="nav-link active" id="nav-catalog-tab" data-bs-toggle="tab" data-bs-target="#nav-catalog"
-                type="button" role="tab" aria-controls="nav-catalog" aria-selected="true">Catalogs</button>
-            <button class="nav-link" id="nav-catalogue-details-tab" data-bs-toggle="tab"
-                data-bs-target="#nav-catalogue-details" type="button" role="tab" aria-controls="nav-catalogue-details"
-                aria-selected="false">Catalog details</button>
-            <button class="nav-link" id="nav-parts-line-tab" data-bs-toggle="tab" data-bs-target="#nav-parts-line"
-                type="button" role="tab" aria-controls="nav-parts-line" aria-selected="false">Parts Line</button>
-        </div>
-    </div>
-    <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active mt-2" id="nav-catalog" role="tabpanel" aria-labelledby="nav-catalog-tab">
-            <!-- two columns -->
+    <ul class="nav nav-pills mb-3 mt-5" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="catalogs-tab" data-bs-toggle="pill" data-bs-target="#catalogs"
+                type="button" role="tab" aria-controls="catalogs" aria-selected="true">Catalogs</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="catalog-details-tab" data-bs-toggle="pill" data-bs-target="#catalog-details"
+                type="button" role="tab" aria-controls="catalog-details" aria-selected="false">Catalog detail</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="parts-line-tab" data-bs-toggle="pill" data-bs-target="#parts-line"
+                type="button" role="tab" aria-controls="parts-line" aria-selected="false">Parts line</button>
+        </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="catalogs" role="tabpanel" aria-labelledby="catalogs-tab">
+            <!-- Catalogs -->
             <div class="d-flex">
-                <div class="col-sm-4 card">
+                <div class="col-4 card">
 
                     <div class="mb-3 row">
                         <label for="country" class="col-sm-3 col-form-label col-form-label-sm">Country</label>
@@ -503,393 +505,434 @@
 
 
                 </div>
-                <div class="col-sm-8 card">
-                    <!-- import bootsrap datatable-->
-                    <div class="nav nav-tabs mb-4" id="nav-tab-catalog-list" role="tablist">
-                        <button class="nav-link active" id="list-view-tab" data-bs-toggle="tab"
-                            data-bs-target="#list-view" type="button" role="tab" aria-controls="list-view"
-                            aria-selected="true">List view</button>
-                        <button class="nav-link" id="thumbnail-view-tab" data-bs-toggle="tab"
-                            data-bs-target="#thumbnail-view" type="button" role="tab" aria-controls="thumbnail-view"
-                            aria-selected="false">Thumbnail view</button>
+                <div class="col-8 card">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="tab1-datatable-tab" data-bs-toggle="pill"
+                                data-bs-target="#tab1-datatable" type="button" role="tab" aria-controls="tab1-datatable"
+                                aria-selected="true">List view</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tab1-thumbnail-view-tab" data-bs-toggle="pill"
+                                data-bs-target="#tab1-thumbnail-view" type="button" role="tab"
+                                aria-controls="tab1-thumbnail-view" aria-selected="false">Thumbnail view</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="tab1-datatable" role="tabpanel"
+                            aria-labelledby="tab1-datatable-tab">
+                            <table id="catalogues" class="cell-border hover table-striped stripe">
+                                <thead>
+                                    <tr>
+                                        <th>Catalogue ID</th>
+                                        <th>TVPN</th>
+                                        <th>Serian number</th>
+                                        <th>Questionnaire</th>
+                                        <th>Year</th>
+                                        <th>Machine width</th>
+                                        <th>Channel info</th>
+                                        <th>No of machines</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Model 1</td>
+                                        <td>2000</td>
+                                        <td>X357</td>
+                                        <td>2020</td>
+                                        <td>210</td>
+                                        <td>Not Set</td>
+                                        <td>2</td>
+
+                                        <td>
+                                            <a href="#">
+                                                <i class="fas fa-eye icon-eye"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-edit icon-edit"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-trash-alt icon-trash"></i>
+
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Model 1</td>
+                                        <td>2000</td>
+                                        <td>X357</td>
+                                        <td>2020</td>
+                                        <td>210</td>
+                                        <td>Not Set</td>
+                                        <td>2</td>
+
+                                        <td>
+                                            <a href="#">
+                                                <i class="fas fa-eye icon-eye"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-edit icon-edit"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-trash-alt icon-trash"></i>
+
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Model 1</td>
+                                        <td>2000</td>
+                                        <td>X357</td>
+                                        <td>2020</td>
+                                        <td>210</td>
+                                        <td>Not Set</td>
+                                        <td>2</td>
+
+                                        <td>
+                                            <a href="#">
+                                                <i class="fas fa-eye icon-eye"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-edit icon-edit"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-trash-alt icon-trash"></i>
+
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Model 1</td>
+                                        <td>2000</td>
+                                        <td>X357</td>
+                                        <td>2020</td>
+                                        <td>210</td>
+                                        <td>Not Set</td>
+                                        <td>2</td>
+
+                                        <td>
+                                            <a href="#">
+                                                <i class="fas fa-eye icon-eye"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-edit icon-edit"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-trash-alt icon-trash"></i>
+
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Model 1</td>
+                                        <td>2000</td>
+                                        <td>X357</td>
+                                        <td>2020</td>
+                                        <td>210</td>
+                                        <td>Not Set</td>
+                                        <td>2</td>
+
+                                        <td>
+                                            <a href="#">
+                                                <i class="fas fa-eye icon-eye"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-edit icon-edit"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-trash-alt icon-trash"></i>
+
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Model 1</td>
+                                        <td>2000</td>
+                                        <td>X357</td>
+                                        <td>2020</td>
+                                        <td>210</td>
+                                        <td>Not Set</td>
+                                        <td>2</td>
+
+                                        <td>
+                                            <a href="#">
+                                                <i class="fas fa-eye icon-eye"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-edit icon-edit"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-trash-alt icon-trash"></i>
+
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Model 1</td>
+                                        <td>2000</td>
+                                        <td>X357</td>
+                                        <td>2020</td>
+                                        <td>210</td>
+                                        <td>Not Set</td>
+                                        <td>2</td>
+
+                                        <td>
+                                            <a href="#">
+                                                <i class="fas fa-eye icon-eye"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-edit icon-edit"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-trash-alt icon-trash"></i>
+
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Model 1</td>
+                                        <td>2000</td>
+                                        <td>X357</td>
+                                        <td>2020</td>
+                                        <td>210</td>
+                                        <td>Not Set</td>
+                                        <td>2</td>
+
+                                        <td>
+                                            <a href="#">
+                                                <i class="fas fa-eye icon-eye"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-edit icon-edit"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-trash-alt icon-trash"></i>
+
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Model 1</td>
+                                        <td>2000</td>
+                                        <td>X357</td>
+                                        <td>2020</td>
+                                        <td>210</td>
+                                        <td>Not Set</td>
+                                        <td>2</td>
+
+                                        <td>
+                                            <a href="#">
+                                                <i class="fas fa-eye icon-eye"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-edit icon-edit"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-trash-alt icon-trash"></i>
+
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Model 1</td>
+                                        <td>2000</td>
+                                        <td>X357</td>
+                                        <td>2020</td>
+                                        <td>210</td>
+                                        <td>Not Set</td>
+                                        <td>2</td>
+
+                                        <td>
+                                            <a href="#">
+                                                <i class="fas fa-eye icon-eye"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-edit icon-edit"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-trash-alt icon-trash"></i>
+
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Model 1</td>
+                                        <td>2000</td>
+                                        <td>X357</td>
+                                        <td>2020</td>
+                                        <td>210</td>
+                                        <td>Not Set</td>
+                                        <td>2</td>
+
+                                        <td>
+                                            <a href="#">
+                                                <i class="fas fa-eye icon-eye"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-edit icon-edit"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-trash-alt icon-trash"></i>
+
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Model 1</td>
+                                        <td>2000</td>
+                                        <td>X357</td>
+                                        <td>2020</td>
+                                        <td>210</td>
+                                        <td>Not Set</td>
+                                        <td>2</td>
+
+                                        <td>
+                                            <a href="#">
+                                                <i class="fas fa-eye icon-eye"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-edit icon-edit"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-trash-alt icon-trash"></i>
+
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Model 1</td>
+                                        <td>2000</td>
+                                        <td>X357</td>
+                                        <td>2020</td>
+                                        <td>210</td>
+                                        <td>Not Set</td>
+                                        <td>2</td>
+
+                                        <td>
+                                            <a href="#">
+                                                <i class="fas fa-eye icon-eye"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-edit icon-edit"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-trash-alt icon-trash"></i>
+
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Model 1</td>
+                                        <td>2000</td>
+                                        <td>X357</td>
+                                        <td>2020</td>
+                                        <td>210</td>
+                                        <td>Not Set</td>
+                                        <td>2</td>
+
+                                        <td>
+                                            <a href="#">
+                                                <i class="fas fa-eye icon-eye"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-edit icon-edit"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-trash-alt icon-trash"></i>
+
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Model 1</td>
+                                        <td>2000</td>
+                                        <td>Y675</td>
+                                        <td>2020</td>
+                                        <td>210</td>
+                                        <td>Not Set</td>
+                                        <td>2</td>
+
+                                        <td>
+                                            <a href="#">
+                                                <i class="fas fa-eye icon-eye"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-edit icon-edit"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-trash-alt icon-trash"></i>
+
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade tab-pan-fz" id="tab1-thumbnail-view" role="tabpanel"
+                            aria-labelledby="tab1-thumbnail-view-tab">
+                            <div class="d-flex justify-content-center align-items-start">
+                                <div class="col-3 thumbnail-view-item thumbnail-view-item">
+                                    <img src="./assets/imgs/optimax.jfif" width="140px" />
+                                    <span>Optimax</span>
+                                    <span>NAVEEN EXPORTS</span>
+                                    <span>PAKISTAN</span>
+                                    <span>Qnr.2000000</span>
+                                    <span>Yr.2003</span>
+                                </div>
+                                <div class="col-3 thumbnail-view-item thumbnail-view-item">
+                                    <img src="./assets/imgs/optimax.jfif" width="140px" />
+                                    <span>Optimax</span>
+                                    <span>NAVEEN EXPORTS</span>
+                                    <span>PAKISTAN</span>
+                                    <span>Qnr.2000000</span>
+                                    <span>Yr.2003</span>
+                                </div>
+                                <div class="col-3 thumbnail-view-item thumbnail-view-item">
+                                    <img src="./assets/imgs/optimax.jfif" width="140px" />
+                                    <span>Optimax</span>
+                                    <span>NAVEEN EXPORTS</span>
+                                    <span>PAKISTAN</span>
+                                    <span>Qnr.2000000</span>
+                                    <span>Yr.2003</span>
+                                </div>
+                                <div class="col-3 thumbnail-view-item thumbnail-view-item">
+                                    <img src="./assets/imgs/optimax.jfif" width="140px" />
+                                    <span>Optimax</span>
+                                    <span>NAVEEN EXPORTS</span>
+                                    <span>PAKISTAN</span>
+                                    <span>Qnr.2000000</span>
+                                    <span>Yr.2003</span>
+                                </div>
+
+                            </div>
+
+                        </div>
                     </div>
-                    <div class="table-container tab-pane fade show active " id="list-view">
-                        <table id="catalogues" class="cell-border hover table-striped stripe">
-                            <thead>
-                                <tr>
-                                    <th>Catalogue ID</th>
-                                    <th>TVPN</th>
-                                    <th>Serian number</th>
-                                    <th>Questionnaire</th>
-                                    <th>Year</th>
-                                    <th>Machine width</th>
-                                    <th>Channel info</th>
-                                    <th>No of machines</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Model 1</td>
-                                    <td>2000</td>
-                                    <td>X357</td>
-                                    <td>2020</td>
-                                    <td>210</td>
-                                    <td>Not Set</td>
-                                    <td>2</td>
-
-                                    <td>
-                                        <a href="#">
-                                            <i class="fas fa-eye icon-eye"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-edit icon-edit"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-trash-alt icon-trash"></i>
-
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Model 1</td>
-                                    <td>2000</td>
-                                    <td>X357</td>
-                                    <td>2020</td>
-                                    <td>210</td>
-                                    <td>Not Set</td>
-                                    <td>2</td>
-
-                                    <td>
-                                        <a href="#">
-                                            <i class="fas fa-eye icon-eye"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-edit icon-edit"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-trash-alt icon-trash"></i>
-
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Model 1</td>
-                                    <td>2000</td>
-                                    <td>X357</td>
-                                    <td>2020</td>
-                                    <td>210</td>
-                                    <td>Not Set</td>
-                                    <td>2</td>
-
-                                    <td>
-                                        <a href="#">
-                                            <i class="fas fa-eye icon-eye"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-edit icon-edit"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-trash-alt icon-trash"></i>
-
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Model 1</td>
-                                    <td>2000</td>
-                                    <td>X357</td>
-                                    <td>2020</td>
-                                    <td>210</td>
-                                    <td>Not Set</td>
-                                    <td>2</td>
-
-                                    <td>
-                                        <a href="#">
-                                            <i class="fas fa-eye icon-eye"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-edit icon-edit"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-trash-alt icon-trash"></i>
-
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Model 1</td>
-                                    <td>2000</td>
-                                    <td>X357</td>
-                                    <td>2020</td>
-                                    <td>210</td>
-                                    <td>Not Set</td>
-                                    <td>2</td>
-
-                                    <td>
-                                        <a href="#">
-                                            <i class="fas fa-eye icon-eye"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-edit icon-edit"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-trash-alt icon-trash"></i>
-
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Model 1</td>
-                                    <td>2000</td>
-                                    <td>X357</td>
-                                    <td>2020</td>
-                                    <td>210</td>
-                                    <td>Not Set</td>
-                                    <td>2</td>
-
-                                    <td>
-                                        <a href="#">
-                                            <i class="fas fa-eye icon-eye"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-edit icon-edit"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-trash-alt icon-trash"></i>
-
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Model 1</td>
-                                    <td>2000</td>
-                                    <td>X357</td>
-                                    <td>2020</td>
-                                    <td>210</td>
-                                    <td>Not Set</td>
-                                    <td>2</td>
-
-                                    <td>
-                                        <a href="#">
-                                            <i class="fas fa-eye icon-eye"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-edit icon-edit"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-trash-alt icon-trash"></i>
-
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Model 1</td>
-                                    <td>2000</td>
-                                    <td>X357</td>
-                                    <td>2020</td>
-                                    <td>210</td>
-                                    <td>Not Set</td>
-                                    <td>2</td>
-
-                                    <td>
-                                        <a href="#">
-                                            <i class="fas fa-eye icon-eye"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-edit icon-edit"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-trash-alt icon-trash"></i>
-
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Model 1</td>
-                                    <td>2000</td>
-                                    <td>X357</td>
-                                    <td>2020</td>
-                                    <td>210</td>
-                                    <td>Not Set</td>
-                                    <td>2</td>
-
-                                    <td>
-                                        <a href="#">
-                                            <i class="fas fa-eye icon-eye"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-edit icon-edit"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-trash-alt icon-trash"></i>
-
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Model 1</td>
-                                    <td>2000</td>
-                                    <td>X357</td>
-                                    <td>2020</td>
-                                    <td>210</td>
-                                    <td>Not Set</td>
-                                    <td>2</td>
-
-                                    <td>
-                                        <a href="#">
-                                            <i class="fas fa-eye icon-eye"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-edit icon-edit"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-trash-alt icon-trash"></i>
-
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Model 1</td>
-                                    <td>2000</td>
-                                    <td>X357</td>
-                                    <td>2020</td>
-                                    <td>210</td>
-                                    <td>Not Set</td>
-                                    <td>2</td>
-
-                                    <td>
-                                        <a href="#">
-                                            <i class="fas fa-eye icon-eye"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-edit icon-edit"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-trash-alt icon-trash"></i>
-
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Model 1</td>
-                                    <td>2000</td>
-                                    <td>X357</td>
-                                    <td>2020</td>
-                                    <td>210</td>
-                                    <td>Not Set</td>
-                                    <td>2</td>
-
-                                    <td>
-                                        <a href="#">
-                                            <i class="fas fa-eye icon-eye"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-edit icon-edit"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-trash-alt icon-trash"></i>
-
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Model 1</td>
-                                    <td>2000</td>
-                                    <td>X357</td>
-                                    <td>2020</td>
-                                    <td>210</td>
-                                    <td>Not Set</td>
-                                    <td>2</td>
-
-                                    <td>
-                                        <a href="#">
-                                            <i class="fas fa-eye icon-eye"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-edit icon-edit"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-trash-alt icon-trash"></i>
-
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Model 1</td>
-                                    <td>2000</td>
-                                    <td>X357</td>
-                                    <td>2020</td>
-                                    <td>210</td>
-                                    <td>Not Set</td>
-                                    <td>2</td>
-
-                                    <td>
-                                        <a href="#">
-                                            <i class="fas fa-eye icon-eye"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-edit icon-edit"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-trash-alt icon-trash"></i>
-
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Model 1</td>
-                                    <td>2000</td>
-                                    <td>Y675</td>
-                                    <td>2020</td>
-                                    <td>210</td>
-                                    <td>Not Set</td>
-                                    <td>2</td>
-
-                                    <td>
-                                        <a href="#">
-                                            <i class="fas fa-eye icon-eye"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-edit icon-edit"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-trash-alt icon-trash"></i>
-
-                                        </a>
-                                    </td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="tab-pane fade show active" id="thumbnail-view">
-
-                    </div>
-
                 </div>
             </div>
 
+
         </div>
-        <div class="tab-pane fade show mt-2" id="nav-catalogue-details" role="tabpanel"
-            aria-labelledby="nav-catalog-tab">
+        <div class="tab-pane fade" id="catalog-details" role="tabpanel" aria-labelledby="catalog-details-tab">
             <div class="d-flex">
-                <div class="col-sm-4 card">
+                <div class="col-4 card">
                     <div class="mb-3 column">
                         <label for="catalog" class="col-sm-12 col-form-label col-form-label-sm">Catalog</label>
                         <div class="col-sm-12">
@@ -1052,79 +1095,120 @@
                     </div>
                     <p class="information-paragraph">Serial numbers of catalog also appear in other catalogues</p>
 
-
                 </div>
-                <div class="col-sm-8 card">
-                    <div class="nav nav-tabs mb-4" id="nav-tab-catalog-list" role="tablist">
-                        <button class="nav-link active" id="details-lsist-view-tab" data-bs-toggle="tab"
-                            data-bs-target="#details-lsist-view" type="button" role="tab"
-                            aria-controls="details-lsist-view" aria-selected="true">List view</button>
-                        <button class="nav-link" id="details-thumbnail-view-tab" data-bs-toggle="tab"
-                            data-bs-target="#details-thumbnail-view" type="button" role="tab"
-                            aria-controls="details-thumbnail-view" aria-selected="false">Thumbnail view</button>
+                <div class="col-8 card">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="tab2-datatable-tab" data-bs-toggle="pill"
+                                data-bs-target="#tab2-datatable" type="button" role="tab" aria-controls="tab2-datatable"
+                                aria-selected="true">List view</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tab2-thumbnail-view-tab" data-bs-toggle="pill"
+                                data-bs-target="#tab2-thumbnail-view" type="button" role="tab"
+                                aria-controls="tab2-thumbnail-view" aria-selected="false">Thumbnail view</button>
+                        </li>
+
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="tab2-datatable" role="tabpanel"
+                            aria-labelledby="tab2-datatable-tab">
+                            <table id="details-lsist-view-table" class="cell-border hover table-striped stripe">
+                                <thead>
+                                    <tr>
+                                        <th>Group</th>
+                                        <th>A Plan</th>
+                                        <th>Block</th>
+                                        <th>Description</th>
+                                        <th>id</th>
+                                        <th>page ID</th>
+                                        <th>drawing number</th>
+
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <th>A 15</th>
+                                        <th>000.119</th>
+                                        <th>Loom Apron</th>
+                                        <th>985487</th>
+                                        <th>1549764</th>
+                                        <th>7896.5488</th>
+
+
+                                        <td class="d-flex">
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#detailsModal">
+                                                <i class="fas fa-eye icon-eye"></i>
+                                            </button>
+                                            <!-- <a href="#">
+                                                <i class="fas fa-eye icon-eye"></i>
+                                            </a> -->
+                                            <a href="#">
+                                                <i class="fas fa-edit icon-edit"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-trash-alt icon-trash"></i>
+
+                                            </a>
+                                        </td>
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade tab-pan-fz" id="tab2-thumbnail-view" role="tabpanel"
+                            aria-labelledby="tab2-thumbnail-view-tab">
+                            <div class="d-flex justify-content-center align-items-start">
+                                <div class="col-3 thumbnail-view-item thumbnail-view-item">
+                                    <img src="./assets/drawings/00089850.webp" width="140px" />
+                                    <span>1- CILINDERKOPSCHROEF </span>
+                                </div>
+                                <div class="col-3 thumbnail-view-item thumbnail-view-item">
+                                    <img src="./assets/drawings/00089857.webp" width="140px" />
+                                    <span>2- INSTEEKKOPPELING </span>
+                                </div>
+                                <div class="col-3 thumbnail-view-item thumbnail-view-item">
+                                    <img src="./assets/drawings/00089850.webp" width="140px" />
+                                    <span>3- INSTEEKKOPPELING </span>
+                                </div>
+                                <div class="col-3 thumbnail-view-item thumbnail-view-item">
+                                    <img src="./assets/drawings/00089857.webp" width="140px" />
+                                    <span>4- STOPSEL</span>
+                                </div>
+
+
+
+
+
+                            </div>
+
+
+
+
+
+                        </div>
                     </div>
-
-                    <div class="table-container tab-pane fade show active " id="details-lsist-view">
-                        <table id="details-lsist-view-table" class="cell-border hover table-striped stripe">
-                            <thead>
-                                <tr>
-                                    <th>Group</th>
-                                    <th>A Plan</th>
-                                    <th>Block</th>
-                                    <th>Description</th>
-                                    <th>id</th>
-                                    <th>page ID</th>
-                                    <th>drawing number</th>
-
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <th>A 15</th>
-                                    <th>000.119</th>
-                                    <th>Loom Apron</th>
-                                    <th>985487</th>
-                                    <th>1549764</th>
-                                    <th>7896.5488</th>
-
-
-                                    <td class="d-flex">
-                                        <button type="button" data-bs-toggle="modal" data-bs-target="#detailsModal">
-                                            <i class="fas fa-eye icon-eye"></i>
-                                        </button>
-                                        <!-- <a href="#">
-                                            <i class="fas fa-eye icon-eye"></i>
-                                        </a> -->
-                                        <a href="#">
-                                            <i class="fas fa-edit icon-edit"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-trash-alt icon-trash"></i>
-
-                                        </a>
-                                    </td>
-                                </tr>
-
-
-                            </tbody>
-                        </table>
-                    </div>
-                   
-
-
                 </div>
-
             </div>
         </div>
-        <div class="tab-pane fade show mt-2" id="nav-parts-line" role="tabpanel" aria-labelledby="nav-catalog-tab">
-            <iframe src="http://www.picanol.be/" width="100%" height="600px" frameborder="0" allowfullscreen></iframe>
+        <div class="tab-pane fade" id="parts-line" role="tabpanel" aria-labelledby="parts-line-tab">
+            <iframe src="http://google.com/" width="100%" height="600px" frameborder="0" allowfullscreen></iframe>
+
         </div>
     </div>
 
 
-    <!-- Login Modal -->
+
+
+
+
+
+
+
+    <!-- Modals -->
     <div class="modal fade modal-centered" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -1159,7 +1243,6 @@
         </div>
     </div>
 
-    <!-- Details modal -->
     <div class="modal fade modal-centered" id="detailsModal" tabindex="-1" aria-labelledby="detailsModalLabel"
         aria-hidden="true">
         <div class="modal-dialog  modal-xl">
@@ -1182,16 +1265,16 @@
                             </select>
                         </div>
                         <div class="buttons">
-                            <button class="btn"  > 
+                            <button class="btn">
                                 <img src="./assets/icons/between.png" width="30" />
                             </button>
-                            <button class="btn"  > 
+                            <button class="btn">
                                 <img src="./assets/icons/horizontal-bars.png" width="30" />
                             </button>
-                            <button class="btn"  > 
+                            <button class="btn">
                                 <img src="./assets/icons/gallery.png" width="30" />
                             </button>
-                            <button class="btn"  > 
+                            <button class="btn">
                                 <img src="./assets/icons/text.png" width="30" />
                             </button>
                         </div>
@@ -1206,33 +1289,33 @@
                                     <td>BE234874</td>
                                     <td>BE234874</td>
                                     <td>LADEKARTER</td>
-                                 
+
                                 </tr>
                                 <tr>
                                     <td>1</td>
                                     <td>BE234874</td>
                                     <td>BE234874</td>
                                     <td>LADEKARTER</td>
-                                    
+
                                 </tr>
                                 <tr>
                                     <td>1</td>
                                     <td>BE234874</td>
                                     <td>BE234874</td>
                                     <td>LADEKARTER</td>
-                                 
+
                                 </tr>
                                 <tr>
                                     <td>1</td>
                                     <td>BE234874</td>
                                     <td>BE234874</td>
                                     <td>LADEKARTER</td>
-                                 
+
                                 </tr>
                             </table>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -1254,7 +1337,7 @@
             scrollCollapse: true,
         });
         // $('#loginModal').modal('show');
-        $('#detailsModal').modal('show');
+        // $('#detailsModal').modal('show');
 
     });
 </script>

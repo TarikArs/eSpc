@@ -1,0 +1,1016 @@
+    <!-- onglets -->
+    <div class="tabsnavigation mt-1">
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-catalog-tab" data-bs-toggle="tab" data-bs-target="#nav-catalog"
+                type="button" role="tab" aria-controls="nav-catalog" aria-selected="true">Catalogs</button>
+            <button class="nav-link" id="nav-catalogue-details-tab" data-bs-toggle="tab"
+                data-bs-target="#nav-catalogue-details" type="button" role="tab" aria-controls="nav-catalogue-details"
+                aria-selected="false">Catalog details</button>
+            <button class="nav-link" id="nav-parts-line-tab" data-bs-toggle="tab" data-bs-target="#nav-parts-line"
+                type="button" role="tab" aria-controls="nav-parts-line" aria-selected="false">Parts Line</button>
+        </div>
+    </div>
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active mt-2" id="nav-catalog" role="tabpanel" aria-labelledby="nav-catalog-tab">
+            <!-- two columns -->
+            <div class="d-flex">
+                <div class="col-sm-4 card">
+
+                    <div class="mb-3 row">
+                        <label for="country" class="col-sm-3 col-form-label col-form-label-sm">Country</label>
+                        <div class="col-sm-9">
+                            <select class="form-select form-select-sm" aria-label="Default select example" id="country">
+                                <option selected></option>
+                                <option value="1">Belgium</option>
+                                <option value="2">France</option>
+                                <option value="3">England</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 row">
+                        <label for="costumer" class="col-sm-3 col-form-label col-form-label-sm">Costumer</label>
+                        <div class="col-sm-9">
+                            <input class="form-control form-control-sm" type="text"
+                                aria-label=".form-control-sm example">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="serail-number" class="col-sm-3 col-form-label col-form-label-sm">Serial
+                            number</label>
+                        <div class="col-sm-9">
+                            <input class="form-control form-control-sm" type="text"
+                                aria-label=".form-control-sm example">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="serail-number" class="col-sm-3 col-form-label col-form-label-sm">Question</label>
+                        <div class="col-sm-9">
+                            <input class="form-control form-control-sm" type="text"
+                                aria-label=".form-control-sm example">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="serail-number" class="col-sm-3 col-form-label col-form-label-sm">TPVN</label>
+                        <div class="col-sm-9">
+                            <input class="form-control form-control-sm" type="text"
+                                aria-label=".form-control-sm example">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="serail-number" class="col-sm-3 col-form-label col-form-label-sm">Schannels
+                            Schedding</label>
+                        <div class="col-sm-9">
+                            <input class="form-control form-control-sm" type="text"
+                                aria-label=".form-control-sm example">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="serail-number" class="col-sm-3 col-form-label col-form-label-sm">Part Number</label>
+                        <div class="col-sm-9">
+                            <input class="form-control form-control-sm" type="text"
+                                aria-label=".form-control-sm example">
+                        </div>
+                    </div>
+                    <div class="checkboxes d-flex mt-2">
+                        <label for="serail-number" class="col-sm-3 col-form-label col-form-label-sm">Machine
+                            Type</label>
+                        <div class="multi-select-checking d-flex">
+                            <!-- multiple check bow three by div -->
+                            <div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">BM</label>
+
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">DELTA</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">GAMMA</label>
+                                </div>
+                            </div>
+                            <div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">GAMMAX</label>
+
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">OMNI</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">OMNIPLUS</label>
+                                </div>
+                            </div>
+                            <div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">GAMMAX</label>
+
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">OMNI</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">OMNIPLUS</label>
+                                </div>
+                            </div>
+                            <div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">GAMMAX</label>
+
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">OMNI</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">OMNIPLUS</label>
+                                </div>
+                            </div>
+                            <div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">GAMMAX</label>
+
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">OMNI</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">OMNIPLUS</label>
+                                </div>
+                            </div>
+                            <div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">GAMMAX</label>
+
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">OMNI</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">OMNIPLUS</label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="checkboxes d-flex mt-2">
+                        <label for="serail-number" class="col-sm-3 col-form-label col-form-label-sm">Machine
+                            Width</label>
+                        <div class="multi-select-checking d-flex">
+                            <!-- multiple check bow three by div -->
+                            <div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">190</label>
+
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">200</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">210</label>
+                                </div>
+                            </div>
+                            <div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">220</label>
+
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">240</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">260</label>
+                                </div>
+                            </div>
+                            <div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">270</label>
+
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">280</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">290</label>
+                                </div>
+                            </div>
+                            <div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">300</label>
+
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">320</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">330</label>
+                                </div>
+                            </div>
+                            <div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">340</label>
+
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">350</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">360</label>
+                                </div>
+                            </div>
+                            <div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">370</label>
+
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">380</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">390</label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="checkboxes d-flex mt-2">
+                        <label for="serail-number" class="col-sm-3 col-form-label col-form-label-sm">Years
+                            Width</label>
+                        <div class="multi-select-checking d-flex">
+                            <!-- multiple check bow three by div -->
+                            <div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">2000</label>
+
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">2001</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">2002</label>
+                                </div>
+                            </div>
+                            <div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">2003</label>
+
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">2004</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">2005</label>
+                                </div>
+                            </div>
+                            <div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">2006</label>
+
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">2008</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">2009</label>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                    <div class="clear-button d-flex justify-content-center mt-4">
+                        <button type="button" class="btn btn-secondary">Apply Filter</button>
+                    </div>
+                    <div class="clear-button d-flex justify-content-center mt-4">
+                        <button type="button" class="btn btn-secondary">Clear search values</button>
+                    </div>
+
+
+
+
+
+                </div>
+                <div class="col-sm-8 card">
+                    <!-- import bootsrap datatable-->
+                    <div class="nav nav-tabs mb-4" id="nav-tab-catalog-list" role="tablist">
+                        <button class="nav-link active" id="list-view-tab" data-bs-toggle="tab"
+                            data-bs-target="#list-view" type="button" role="tab" aria-controls="list-view"
+                            aria-selected="true">List view</button>
+                        <button class="nav-link" id="thumbnail-view-tab" data-bs-toggle="tab"
+                            data-bs-target="#thumbnail-view" type="button" role="tab" aria-controls="thumbnail-view"
+                            aria-selected="false">Thumbnail view</button>
+                    </div>
+                    <div class="table-container tab-pane fade show active " id="list-view">
+                        <table id="catalogues" class="cell-border hover table-striped stripe">
+                            <thead>
+                                <tr>
+                                    <th>Catalogue ID</th>
+                                    <th>TVPN</th>
+                                    <th>Serian number</th>
+                                    <th>Questionnaire</th>
+                                    <th>Year</th>
+                                    <th>Machine width</th>
+                                    <th>Channel info</th>
+                                    <th>No of machines</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Model 1</td>
+                                    <td>2000</td>
+                                    <td>X357</td>
+                                    <td>2020</td>
+                                    <td>210</td>
+                                    <td>Not Set</td>
+                                    <td>2</td>
+
+                                    <td>
+                                        <a href="#">
+                                            <i class="fas fa-eye icon-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-edit icon-edit"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-trash-alt icon-trash"></i>
+
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Model 1</td>
+                                    <td>2000</td>
+                                    <td>X357</td>
+                                    <td>2020</td>
+                                    <td>210</td>
+                                    <td>Not Set</td>
+                                    <td>2</td>
+
+                                    <td>
+                                        <a href="#">
+                                            <i class="fas fa-eye icon-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-edit icon-edit"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-trash-alt icon-trash"></i>
+
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Model 1</td>
+                                    <td>2000</td>
+                                    <td>X357</td>
+                                    <td>2020</td>
+                                    <td>210</td>
+                                    <td>Not Set</td>
+                                    <td>2</td>
+
+                                    <td>
+                                        <a href="#">
+                                            <i class="fas fa-eye icon-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-edit icon-edit"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-trash-alt icon-trash"></i>
+
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Model 1</td>
+                                    <td>2000</td>
+                                    <td>X357</td>
+                                    <td>2020</td>
+                                    <td>210</td>
+                                    <td>Not Set</td>
+                                    <td>2</td>
+
+                                    <td>
+                                        <a href="#">
+                                            <i class="fas fa-eye icon-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-edit icon-edit"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-trash-alt icon-trash"></i>
+
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Model 1</td>
+                                    <td>2000</td>
+                                    <td>X357</td>
+                                    <td>2020</td>
+                                    <td>210</td>
+                                    <td>Not Set</td>
+                                    <td>2</td>
+
+                                    <td>
+                                        <a href="#">
+                                            <i class="fas fa-eye icon-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-edit icon-edit"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-trash-alt icon-trash"></i>
+
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Model 1</td>
+                                    <td>2000</td>
+                                    <td>X357</td>
+                                    <td>2020</td>
+                                    <td>210</td>
+                                    <td>Not Set</td>
+                                    <td>2</td>
+
+                                    <td>
+                                        <a href="#">
+                                            <i class="fas fa-eye icon-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-edit icon-edit"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-trash-alt icon-trash"></i>
+
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Model 1</td>
+                                    <td>2000</td>
+                                    <td>X357</td>
+                                    <td>2020</td>
+                                    <td>210</td>
+                                    <td>Not Set</td>
+                                    <td>2</td>
+
+                                    <td>
+                                        <a href="#">
+                                            <i class="fas fa-eye icon-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-edit icon-edit"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-trash-alt icon-trash"></i>
+
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Model 1</td>
+                                    <td>2000</td>
+                                    <td>X357</td>
+                                    <td>2020</td>
+                                    <td>210</td>
+                                    <td>Not Set</td>
+                                    <td>2</td>
+
+                                    <td>
+                                        <a href="#">
+                                            <i class="fas fa-eye icon-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-edit icon-edit"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-trash-alt icon-trash"></i>
+
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Model 1</td>
+                                    <td>2000</td>
+                                    <td>X357</td>
+                                    <td>2020</td>
+                                    <td>210</td>
+                                    <td>Not Set</td>
+                                    <td>2</td>
+
+                                    <td>
+                                        <a href="#">
+                                            <i class="fas fa-eye icon-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-edit icon-edit"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-trash-alt icon-trash"></i>
+
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Model 1</td>
+                                    <td>2000</td>
+                                    <td>X357</td>
+                                    <td>2020</td>
+                                    <td>210</td>
+                                    <td>Not Set</td>
+                                    <td>2</td>
+
+                                    <td>
+                                        <a href="#">
+                                            <i class="fas fa-eye icon-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-edit icon-edit"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-trash-alt icon-trash"></i>
+
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Model 1</td>
+                                    <td>2000</td>
+                                    <td>X357</td>
+                                    <td>2020</td>
+                                    <td>210</td>
+                                    <td>Not Set</td>
+                                    <td>2</td>
+
+                                    <td>
+                                        <a href="#">
+                                            <i class="fas fa-eye icon-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-edit icon-edit"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-trash-alt icon-trash"></i>
+
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Model 1</td>
+                                    <td>2000</td>
+                                    <td>X357</td>
+                                    <td>2020</td>
+                                    <td>210</td>
+                                    <td>Not Set</td>
+                                    <td>2</td>
+
+                                    <td>
+                                        <a href="#">
+                                            <i class="fas fa-eye icon-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-edit icon-edit"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-trash-alt icon-trash"></i>
+
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Model 1</td>
+                                    <td>2000</td>
+                                    <td>X357</td>
+                                    <td>2020</td>
+                                    <td>210</td>
+                                    <td>Not Set</td>
+                                    <td>2</td>
+
+                                    <td>
+                                        <a href="#">
+                                            <i class="fas fa-eye icon-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-edit icon-edit"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-trash-alt icon-trash"></i>
+
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Model 1</td>
+                                    <td>2000</td>
+                                    <td>X357</td>
+                                    <td>2020</td>
+                                    <td>210</td>
+                                    <td>Not Set</td>
+                                    <td>2</td>
+
+                                    <td>
+                                        <a href="#">
+                                            <i class="fas fa-eye icon-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-edit icon-edit"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-trash-alt icon-trash"></i>
+
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Model 1</td>
+                                    <td>2000</td>
+                                    <td>Y675</td>
+                                    <td>2020</td>
+                                    <td>210</td>
+                                    <td>Not Set</td>
+                                    <td>2</td>
+
+                                    <td>
+                                        <a href="#">
+                                            <i class="fas fa-eye icon-eye"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-edit icon-edit"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-trash-alt icon-trash"></i>
+
+                                        </a>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade show active" id="thumbnail-view">
+Thumbnail view
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade show mt-2" id="nav-catalogue-details" role="tabpanel"
+            aria-labelledby="nav-catalog-tab">
+            <div class="d-flex">
+                <div class="col-sm-4 card">
+                    <div class="mb-3 column">
+                        <label for="catalog" class="col-sm-12 col-form-label col-form-label-sm">Catalog</label>
+                        <div class="col-sm-12">
+                            <select class="form-select form-select-sm" aria-label="Default select example" id="country">
+                                <option selected>9760 - OPTIMAX NAVEENA</option>
+                                <option value="1">9761 - OPTIMAX NAVEENA</option>
+                                <option value="2">9762 - OPTIMAX NAVEENA</option>
+                                <option value="3">9763 - OPTIMAX NAVEENA</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-3 column">
+                        <label for="part-number" class="col-sm-12 col-form-label col-form-label-sm">Part Number or part
+                            Name</label>
+                        <div class="col-sm-12">
+                            <input class="form-control form-control-sm" type="text"
+                                aria-label=".form-control-sm example">
+                        </div>
+                    </div>
+
+                    <div class="mb-3 column">
+                        <label for="drawing-description" class="col-sm-12 col-form-label col-form-label-sm">Drawing
+                            description</label>
+                        <div class="col-sm-12">
+                            <input class="form-control form-control-sm" type="text"
+                                aria-label=".form-control-sm example">
+                        </div>
+                    </div>
+                    <div class="checkboxes mt-2 column">
+                        <label for="serail-number" class="col-sm-3 col-form-label col-form-label-sm">Machine
+                            Type</label>
+                        <div class="multi-select-checking d-flex">
+                            <!-- multiple check bow three by div -->
+                            <div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">A10</label>
+
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">A11</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">A12</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">A13</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">A14</label>
+                                </div>
+                            </div>
+                            <div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">A10</label>
+
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">A11</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">A12</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">A13</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">A14</label>
+                                </div>
+                            </div>
+                            <div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">A10</label>
+
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">A11</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">A12</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">A13</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">A14</label>
+                                </div>
+                            </div>
+                            <div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">A10</label>
+
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">A11</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">A12</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">A13</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">A14</label>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="clear-button d-flex justify-content-center mt-4">
+                        <button type="button" class="btn btn-secondary">Apply Filter</button>
+                    </div>
+                    <div class="clear-button d-flex justify-content-center mt-4">
+                        <button type="button" class="btn btn-secondary">Clear search values</button>
+                    </div>
+                    <p class="information-paragraph">Serial numbers of catalog also appear in other catalogues</p>
+
+
+                </div>
+                <div class="col-sm-8 card">
+                    <div class="nav nav-tabs mb-4" id="nav-tab-catalog-list" role="tablist">
+                        <button class="nav-link active" id="details-lsist-view-tab" data-bs-toggle="tab"
+                            data-bs-target="#details-lsist-view" type="button" role="tab"
+                            aria-controls="details-lsist-view" aria-selected="true">List view</button>
+                        <button class="nav-link" id="details-thumbnail-view-tab" data-bs-toggle="tab"
+                            data-bs-target="#details-thumbnail-view" type="button" role="tab"
+                            aria-controls="details-thumbnail-view" aria-selected="false">Thumbnail view</button>
+                    </div>
+
+                    <div class="table-container tab-pane fade show active " id="details-lsist-view">
+                        <table id="details-lsist-view-table" class="cell-border hover table-striped stripe">
+                            <thead>
+                                <tr>
+                                    <th>Group</th>
+                                    <th>A Plan</th>
+                                    <th>Block</th>
+                                    <th>Description</th>
+                                    <th>id</th>
+                                    <th>page ID</th>
+                                    <th>drawing number</th>
+
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <th>A 15</th>
+                                    <th>000.119</th>
+                                    <th>Loom Apron</th>
+                                    <th>985487</th>
+                                    <th>1549764</th>
+                                    <th>7896.5488</th>
+
+
+                                    <td class="d-flex">
+                                        <button type="button" data-bs-toggle="modal" data-bs-target="#detailsModal">
+                                            <i class="fas fa-eye icon-eye"></i>
+                                        </button>
+                                        <!-- <a href="#">
+                                            <i class="fas fa-eye icon-eye"></i>
+                                        </a> -->
+                                        <a href="#">
+                                            <i class="fas fa-edit icon-edit"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fas fa-trash-alt icon-trash"></i>
+
+                                        </a>
+                                    </td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                   
+
+
+                </div>
+
+            </div>
+        </div>
+        <div class="tab-pane fade show mt-2" id="nav-parts-line" role="tabpanel" aria-labelledby="nav-catalog-tab">
+            <iframe src="http://www.picanol.be/" width="100%" height="600px" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
