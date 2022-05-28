@@ -93,3 +93,16 @@ thead {
     align-items: center;
     cursor: pointer;
 }
+.user-profile {
+    cursor: pointer;
+    margin-right: 2%;
+}
+.user-icon {
+    font-size: 30px;
+}
+.modal-content {
+    height: 100vh;
+}
+.basket-buttons button {
+    width: 20%;
+}

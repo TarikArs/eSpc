@@ -55,12 +55,7 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
                             <li><a class="dropdown-item" href="#">Synchronize local DB</a></li>
                             <li><a class="dropdown-item" href="#">Server info</a></li>
-                            <li class="dropend">
-                                <a href="#" class=" dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    User Settings
-                                </a>
-                            </li>
+
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -73,10 +68,9 @@
                             Languages
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">French</a></li>
-                            <li><a class="dropdown-item" href="#">Spanich</a></li>
-                            <li><a class="dropdown-item" href="#">English</a></li>
-                            <li><a class="dropdown-item" href="#">Russian</a></li>
+                            <li><a class="dropdown-item" href="#">Menu langage</a></li>
+                            <li><a class="dropdown-item" href="#">Catalog langage</a></li>
+
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -85,8 +79,8 @@
                             Ordering
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">item-1</a></li>
-                            <li><a class="dropdown-item" href="#">item-2</a></li>
+                            <li><a class="dropdown-item" href="#">Edit basket</a></li>
+                            <li><a class="dropdown-item" href="#">PartsLine</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -95,17 +89,25 @@
                             Help
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Service client</a></li>
-                            <li><a class="dropdown-item" href="#">Contact-us</a></li>
-                            <li><a class="dropdown-item" href="#">Ask question</a></li>
+                            <li><a class="dropdown-item" href="#">eSPC help</a></li>
+                            <li><a class="dropdown-item" href="#">Clear code</a></li>
+                            <li><a class="dropdown-item" href="#">Info</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </div>
+        <div class="user-profile">
+            <div class="user-profile-img">
+                <!-- user icon -->
+                <i class="fas fa-user-circle user-icon"></i>
+            </div>
+
+
+        </div>
     </nav>
 
-    <ul class="nav nav-pills mb-3 mt-5" id="pills-tab" role="tablist">
+    <ul class="nav nav-pills mb-3 mt-3" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
             <button class="nav-link active" id="catalogs-tab" data-bs-toggle="pill" data-bs-target="#catalogs"
                 type="button" role="tab" aria-controls="catalogs" aria-selected="true">Catalogs</button>
@@ -515,7 +517,7 @@
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="tab1-thumbnail-view-tab" data-bs-toggle="pill"
                                 data-bs-target="#tab1-thumbnail-view" type="button" role="tab"
-                                aria-controls="tab1-thumbnail-view" aria-selected="false">Thumbnail view</button>
+                                aria-controls="tab1-thumbnail-view" aria-selected="false">thumbnail views</button>
                         </li>
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
@@ -1106,7 +1108,7 @@
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="tab2-thumbnail-view-tab" data-bs-toggle="pill"
                                 data-bs-target="#tab2-thumbnail-view" type="button" role="tab"
-                                aria-controls="tab2-thumbnail-view" aria-selected="false">Thumbnail view</button>
+                                aria-controls="tab2-thumbnail-view" aria-selected="false">thumbnails views</button>
                         </li>
 
                     </ul>
@@ -1162,7 +1164,8 @@
                         <div class="tab-pane fade tab-pan-fz" id="tab2-thumbnail-view" role="tabpanel"
                             aria-labelledby="tab2-thumbnail-view-tab">
                             <div class="d-flex justify-content-center align-items-start">
-                                <div class="col-3 thumbnail-view-item thumbnail-view-item">
+                                <div class="col-3 thumbnail-view-item thumbnail-view-item" data-bs-toggle="modal"
+                                    data-bs-target="#detailsModal">
                                     <img src="./assets/drawings/00089850.webp" width="140px" />
                                     <span>1- CILINDERKOPSCHROEF </span>
                                 </div>
@@ -1178,16 +1181,7 @@
                                     <img src="./assets/drawings/00089857.webp" width="140px" />
                                     <span>4- STOPSEL</span>
                                 </div>
-
-
-
-
-
                             </div>
-
-
-
-
 
                         </div>
                     </div>
@@ -1195,8 +1189,7 @@
             </div>
         </div>
         <div class="tab-pane fade" id="parts-line" role="tabpanel" aria-labelledby="parts-line-tab">
-            <iframe src="http://google.com/" width="100%" height="600px" frameborder="0" allowfullscreen></iframe>
-
+            <iframe src="https://www.picanol.be/" width="100%" height="600px" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
 
@@ -1287,34 +1280,132 @@
                                 <tr>
                                     <td>1</td>
                                     <td>BE234874</td>
-                                    <td>BE234874</td>
                                     <td>LADEKARTER</td>
+                                    <td>LADENGEHEAUSE</td>
 
                                 </tr>
                                 <tr>
-                                    <td>1</td>
-                                    <td>BE234874</td>
-                                    <td>BE234874</td>
-                                    <td>LADEKARTER</td>
+                                    <td>2</td>
+                                    <td>BA233401</td>
+                                    <td>NOKVOLGERAS</td>
+                                    <td>ACHSE</td>
 
                                 </tr>
                                 <tr>
-                                    <td>1</td>
-                                    <td>BE234874</td>
+                                    <td>3</td>
                                     <td>BE234874</td>
                                     <td>LADEKARTER</td>
+                                    <td>LADENGEHEAUSE</td>
 
                                 </tr>
                                 <tr>
-                                    <td>1</td>
-                                    <td>BE234874</td>
-                                    <td>BE234874</td>
-                                    <td>LADEKARTER</td>
+                                    <td>4</td>
+                                    <td>BA233401</td>
+                                    <td>NOKVOLGERAS</td>
+                                    <td>ACHSE</td>
 
                                 </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>BE234874</td>
+                                    <td>LADEKARTER</td>
+                                    <td>LADENGEHEAUSE</td>
+
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>BA233401</td>
+                                    <td>NOKVOLGERAS</td>
+                                    <td>ACHSE</td>
+
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>BE234874</td>
+                                    <td>LADEKARTER</td>
+                                    <td>LADENGEHEAUSE</td>
+
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>BA233401</td>
+                                    <td>NOKVOLGERAS</td>
+                                    <td>ACHSE</td>
+
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>BE234874</td>
+                                    <td>LADEKARTER</td>
+                                    <td>LADENGEHEAUSE</td>
+
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>BA233401</td>
+                                    <td>NOKVOLGERAS</td>
+                                    <td>ACHSE</td>
+
+                                </tr>
+
                             </table>
                         </div>
                     </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal fade modal-centered" id="BasketModal" tabindex="-1" aria-labelledby="detailsModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog  modal-xl">
+            <div class="modal-content border-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="detailsModalLabel">EDIT BASKET</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-striped w-100 table-hover">
+                        <thead>
+                            <tr>
+                                <th>Quantity</th>
+                                <th>Part Number</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>BE3469X</td>
+                                <td>Not SET</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>BE3469X</td>
+                                <td>Not SET</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>BE3469X</td>
+                                <td>Not SET</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="basket-buttons">
+                        <div class="d-flex justify-content-around mb-3">
+                            <button type="button" class="btn btn-secondary">Copy to clipboard</button>
+                            <button type="button" class="btn btn-secondary">Delete</button>
+                        </div>
+                        <div class="d-flex justify-content-around">
+                            <button type="button" class="btn btn-secondary">Save to Excel</button>
+                            <button type="button" class="btn btn-secondary">Save to partsline</button>
+                        </div>
+
+                    </div>
+
 
                 </div>
             </div>
@@ -1338,6 +1429,7 @@
         });
         // $('#loginModal').modal('show');
         // $('#detailsModal').modal('show');
+        $('#BasketModal').modal('show');
 
     });
 </script>
